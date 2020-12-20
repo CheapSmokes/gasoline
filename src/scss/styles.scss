@@ -1,0 +1,75 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #000;
+    color: #FFF;
+    background-image: url('../assets/bg.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+.tool-tip-container {
+    position: relative;
+
+    .tooltip-wrapper {
+        position: absolute;
+        z-index: 999;
+        .dot {
+            background-color: #FFF;
+            width: 18px;
+            height: 18px;
+            display: block;
+            border-radius: 50%;
+            border: 3px solid #af977a;
+            box-shadow: 2px 1px 7px #191919;
+        }
+        .label {
+            display: none;
+            position: relative;
+            left: 20px;
+            top: -15px;
+            .title {
+                background-color: #af977a;
+            }
+            .price {
+                background-color: #191919;
+                display: inline-block;
+            }
+        }
+
+        &:hover {
+            .label {
+                display: block;
+            }
+        }
+    }
+
+    .tip-1 {
+        left: 32%;
+        top: 27%;
+    }
+    .tip-2 {
+        left: 38%;
+        top: 15%;
+    }
+    .tip-3 {
+        left: 62%;
+        top: 36%;
+    }
+    .tip-4 {
+        left: 34%;
+        top: 55%;
+    }
+    .tip-5 {
+        left: 69%;
+        top: 75%;
+    }
+}
